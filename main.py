@@ -8,8 +8,8 @@ START_MESSAGE_BUTTONS = [
                  InlineKeyboardButton('GROUP', url='https://t.me/AIOM_BOTS_GROUP')
      ],
      [
-                 InlineKeyboardButton('OWNER', url='https://t.me/ajvadntr')],
-                 InlineKeyboardButton('MY DEY', url='https://t.me/ajvadntr')]
+                 InlineKeyboardButton('OWNER', url='https://t.me/ajvadntr'),
+                 InlineKeyboardButton('MY DEY', url='https://t.me/ajvadntr')
      ]
 ]
 
