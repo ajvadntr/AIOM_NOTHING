@@ -3,7 +3,14 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 START_MESSAGE = "Hi, This Is A Test Bot"
 START_MESSAGE_BUTTONS = [
-     [InlineKeyboardButton('DEVELOPOR', url='https://t.me/ajvadntr')]
+     [
+                 InlineKeyboardButton('CHANNEL', url='https://t.me/AIOM_BOTS'),
+                 InlineKeyboardButton('GROUP', url='https://t.me/AIOM_BOTS_GROUP')
+     ],
+     [
+                 InlineKeyboardButton('OWNER', url='https://t.me/ajvadntr')],
+                 InlineKeyboardButton('MY DEY', url='https://t.me/ajvadntr')]
+     ]
 ]
 
 @bot.on_message(filters.command('start') & filters.private)
