@@ -1,3 +1,3 @@
-from plugins.config import Config
+from plugins.client import Client
 
 @bot.on_message
