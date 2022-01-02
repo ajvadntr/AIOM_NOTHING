@@ -1,0 +1,39 @@
+{
+    "name": "Nothing",
+    "description": "A Bot By @AIOM_BOTS",
+    "logo": "https://telegra.ph/file/0665b36e85d979ae3e862.jpg",
+    "stack": "container",
+    "keywords": [
+        "Telegram",
+        "Nothing",
+        "Bot"
+    ],
+    "website": "https://www.aiombots.ml",
+    "repository": "https://github.com/aiombots/AIOM_NOTHING",
+    "success_url": "https://www.aiombots.ml",
+    "env": {
+        "API_ID": {
+            "description": "Your APP ID From https://youtu.be/5eEsvLAKVc0 or @MT_MyTelegramOrg_Bot",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash From https://youtu.be/5eEsvLAKVc0 or @MT_MyTelegramOrg_Bot",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
