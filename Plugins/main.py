@@ -12,4 +12,10 @@ def command1(bot, message):
 def echobot(client, message):
     message.replay_text(message.text)
 
+GROUP = "AIOM_BOTS_GROUP"
+WELCOME_MESSAGE = "Hey, Welcome To Our Group"
+
+
+@bot.on_message(filters.chat(GROUP) & filters.new_chat_members)
+
 bot.run()
