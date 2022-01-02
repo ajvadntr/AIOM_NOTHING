@@ -8,4 +8,8 @@ def command1(bot, message):
 def command1(bot, message):
     message.replay_text("Their Is Nothing To Say")
 
+@bot.on_message(filters.text & filters.private)
+def echobot(client, message):
+    message.replay_text(message.text)
+
 bot.run()
