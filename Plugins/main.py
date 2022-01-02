@@ -17,5 +17,7 @@ WELCOME_MESSAGE = "Hey, Welcome To Our Group"
 
 
 @bot.on_message(filters.chat(GROUP) & filters.new_chat_members)
+def welcomebot(client, message):
+    message.replay_text(WELCOME_MESSAGE)
 
 bot.run()
