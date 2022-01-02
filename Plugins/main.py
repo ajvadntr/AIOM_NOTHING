@@ -1,8 +1,20 @@
 from plugins.client import Client
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
+START_MESSAGE = "Hi, This Is A Test Bot"
+START_MESSAGE_BUTTONS = [
+     [InlineKeyboardButton('DEVELOPOR', url='https://t.me/ajvadntr')]
+]
 
 @bot.on_message(filters.command('start') & filters.private)
-def command1(bot, message):
-    bot.send_message(message.chat.id, "Hi, This Is A Test Bot")
+def start(bot, message):
+   text = START_MESSAGE
+   reply_markup = InlineKeyboardMarkup(START_MESSAGE_BUTTONS)
+   message.replay(
+        text=text,
+        reply_markup=reply_markup,
+        disable_web_page_preview=True
+)
 
 @bot.on_message(filters.command('help'))
 def command2(bot, message):
