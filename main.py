@@ -1,4 +1,4 @@
-from plugins.client import Client
+from Plugins.client import Client
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 START_MESSAGE = "Hi, This Is A Test Bot"
