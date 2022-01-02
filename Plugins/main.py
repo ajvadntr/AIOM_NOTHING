@@ -6,6 +6,6 @@ def command1(bot, message):
 
 @bot.on_message(filters.command('help'))
 def command1(bot, message):
-    bot.send_message(message.chat.id, "Their Is Nothing To Say")
+    message.replay_text("Their Is Nothing To Say")
 
 bot.run()
