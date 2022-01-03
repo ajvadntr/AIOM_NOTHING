@@ -1,4 +1,6 @@
+import pyrogram
 from pyrogram import Client, filters
+logging.getLogger("pyrogram").setLevel(logging.WARNING)
 from Plugins.Config import Config
 
 bot = Client(
