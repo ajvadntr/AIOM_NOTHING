@@ -1,4 +1,5 @@
 from pyrogram import Client, filters
+from Plugins.Config import Config
 
 bot = Client(
   "My First Project"
